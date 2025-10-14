@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MG Street - Loja Oficial</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <p id="status-backend">Conectando ao backend...</p>
+  <script src="script.js"></script>
+
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="header-left">
+      <img src="img/logo.png" alt="MG Street" class="logo-header">
+    </div>
+
+    <nav class="main-nav">
+      <a href="#">Início</a>
+      <a href="#destaques">Loja</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="header-right">
+      <i class="fas fa-user"></i>
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <div class="overlay">
+      <h1>Nova Coleção 2025</h1>
+      <p>Estilo que fala por você</p>
+      <button class="btn-cta" id="btn-colecao">Ver Coleção</button>
+    </div>
+  </section>
+
+  <!-- DESTAQUES -->
+  <section class="destaques" id="destaques">
+    <h2>Destaques</h2>
+    <div class="produtos">
+      <div class="produto">
+        <div class="img-wrap">
+          <img src="img/produto1.png" alt="Produto 1">
+          <span class="badge">Novo</span>
+        </div>
+        <h3>Camiseta Oversized</h3>
+        <p class="preco">R$ 129,90</p>
+        <button class="btn-buy">Comprar</button>
+      </div>
+
+      <div class="produto">
+        <div class="img-wrap">
+          <img src="img/produto2.png" alt="Produto 2">
+        </div>
+        <h3>Moletom MG Street</h3>
+        <p class="preco">R$ 229,90</p>
+        <button class="btn-buy">Comprar</button>
+      </div>
+
+      <div class="produto">
+        <div class="img-wrap">
+          <img src="img/produto3.png" alt="Produto 3">
+          <span class="badge sold">Esgotado</span>
+        </div>
+        <h3>Calça Cargo</h3>
+        <p class="preco">R$ 199,90</p>
+        <button class="btn-buy">Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="sobre-container">
+      <h2>Sobre Nós</h2>
+      <p>
+        A <strong>MG Street</strong> nasceu da vontade de trazer para o Brasil um novo conceito de moda urbana, inspirado pelo movimento das ruas e pela energia única que elas transmitem. Mais do que uma marca, somos uma comunidade que acredita que estilo não é apenas aquilo que você veste, mas sim a forma como você se expressa, como se posiciona e como transmite sua essência para o mundo.
+      </p>
+      <p>
+        Desde o início, nossa missão sempre foi unir <strong>qualidade, autenticidade e acessibilidade</strong> em cada peça. Cada detalhe, do corte ao tecido, é pensado para garantir conforto e durabilidade sem perder o estilo. Nossa equipe acompanha tendências globais do <em>streetwear</em> e adapta cada conceito à realidade local, criando coleções exclusivas que representam não apenas moda, mas também atitude.
+      </p>
+      <p>
+        O streetwear é mais do que roupas: é uma linguagem, uma identidade que conecta diferentes culturas, ideias e gerações. Por isso, buscamos ser uma marca que conversa diretamente com quem vive esse movimento, seja na música, no esporte, na arte, no lifestyle urbano ou simplesmente na forma de viver a vida com liberdade.
+      </p>
+      <p>
+        Na <strong>MG Street</strong>, acreditamos que todo mundo tem uma história única para contar — e que a moda é um dos jeitos mais poderosos de dar voz a essa história. Queremos que cada cliente sinta que está vestindo algo especial, feito para destacar sua individualidade. Cada camiseta, moletom ou calça não é só mais uma peça de roupa, mas sim uma extensão de quem você é.
+      </p>
+      <p>
+        Estamos comprometidos em crescer junto com nossos clientes. Por isso, nossa visão para o futuro é ousada: expandir nossa presença, lançar coleções cada vez mais inovadoras e, principalmente, criar um impacto positivo na cultura urbana. Trabalhamos para que a <strong>MG Street</strong> seja lembrada não apenas como uma loja, mas como uma marca que inspira, conecta e transforma.
+      </p>
+      <p>
+        Seja qual for a sua vibe — ousado, minimalista, clássico ou inovador — temos certeza de que existe algo dentro da nossa coleção que vai se conectar com você. Não queremos que você apenas vista nossas roupas: queremos que você <strong>viva a experiência MG Street</strong>.
+      </p>
+      <p>E esse é apenas o começo.</p>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer id="contato">
+    <div class="footer-inner">
+      <p>2025 MG Street </p>
+      <div class="social">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-tiktok"></i>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Modal Login ===== -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Login</h2>
+      <form>
+        <label for="login-email">E-mail</label>
+        <input type="email" id="login-email" placeholder="Digite seu e-mail" required>
+
+        <label for="login-senha">Senha</label>
+        <input type="password" id="login-senha" placeholder="Digite sua senha" required>
+
+        <button type="submit" class="btn-login">Entrar</button>
+        <p class="signup-text">Não tem conta? <a href="#" id="open-signup">Cadastre-se</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===== Modal Cadastro ===== -->
+  <div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-signup">&times;</span>
+      <h2>Criar Conta</h2>
+      <form>
+        <label for="signup-nome">Nome</label>
+        <input type="text" id="signup-nome" placeholder="Seu nome completo" required>
+
+        <label for="signup-email">E-mail</label>
+        <input type="email" id="signup-email" placeholder="Digite seu e-mail" required>
+
+        <label for="signup-senha">Senha</label>
+        <input type="password" id="signup-senha" placeholder="Crie uma senha" required>
+
+        <button type="submit" class="btn-login">Cadastrar</button>
+        <p class="signup-text">Já tem conta? <a href="#" id="open-login">Faça login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
